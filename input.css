@@ -5,7 +5,7 @@
 @layer components{
 
   .primary-btn{
-   @apply bg-[#B4F461] rounded-md  btn-md  px-8 hover:bg-[#8dd82a];
+   @apply bg-[#B4F461] rounded-md  btn border-none  px-6 lg:px-8 hover:bg-[#8dd82a];
     
 
   }
