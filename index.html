@@ -13,43 +13,49 @@
     </style>
   </head>
   <body class="relative">
-    <nav class="top-0 left-0 z-10 sticky shadow-md backdrop-blur-lg w-full">
-      <section class="flex justify-around bg-gradient-to-b  from-[#F9F7F3] to-white py-5 font-bold">
-        <button id="blogBtn" class="primary-btn ">Blog</button>
-        <div class="flex flex-wrap justify-center text-center items-center gap-3">
-          <img class="md:h-10 h-6" src="assets/logo.png" alt="" />
+    <nav class="top-0 z-10 sticky shadow-md backdrop-blur-lg w-full">
+      <section
+        class="flex justify-around bg-gradient-to-b from-[#f7f6f2] to-[#f3f1ee] py-5 font-bold"
+      >
+        <button id="blogBtn" class="primary-btn">Blog</button>
+        <div
+          class="flex flex-wrap justify-center items-center gap-3 text-center"
+        >
+          <img class="h-6 md:h-10" src="assets/logo.png" alt="" />
           <h1 class="text-sm md:text-base">Donate Bangladesh</h1>
         </div>
-        <div class="flex justify-center items-center gap-1 text-center flex-wrap">
+        <div
+          class="flex flex-wrap justify-center items-center gap-1 text-center"
+        >
           <img class="h-6" src="assets/coin.png" alt="" />
-          <h1 class="text-sm md:text-base"><span id="totalBalance" >5500</span>BDT</h1>
+          <h1 class="text-sm md:text-base">
+            <span id="totalBalance">5500</span>BDT
+          </h1>
         </div>
       </section>
 
       <div id="tab" class="flex justify-center items-center gap-3 py-6">
         <button id="donationBtn" class="btn primary-btn">Donation</button>
-        <button id="historyBtn" class="font-normal  btn  btn-outline ">
-          History
-        </button>
+        <button id="historyBtn" class="font-normal btn">History</button>
       </div>
     </nav>
 
     <main
-      class="relative z-0 flex flex-col justify-center   items-center gap-4 mx-auto  mt-8 mb-12 w-11/12 lg:w-10/12 "
+      class="relative z-0 flex flex-col justify-center items-center gap-4 mx-auto mt-8 mb-12 w-11/12 lg:w-10/12"
     >
       <div id="card" class="space-y-3">
         <!-- card 1 -->
         <section
-          class="flex lg:flex-row flex-col justify-center items-center bg-base-100 shadow-xl p-4 border w-full card "
+          class="flex lg:flex-row flex-col justify-center items-center bg-base-100 shadow-xl p-4 border w-full card"
         >
-          <div class="lg:w-6/12 w-full h-full ">
-            <img  class="h-full  w-full  "
-            src="assets/noakhali.png" alt="Shoes" />
+          <div class="w-full lg:w-6/12 h-full">
+            <img class="w-full h-full" src="assets/noakhali.png" alt="Shoes" />
           </div>
-          <div class="p-4 lg:w-6/12 card-body gap-3">
+          <div class="gap-3 p-4 lg:w-6/12 card-body">
             <div class="flex gap-2 card-actions">
               <button class="btn">
-                <img class="h-6" src="assets/coin.png" alt="" /> <span id="noakhaliAmount">10000</span> BDT
+                <img class="h-6" src="assets/coin.png" alt="" />
+                <span id="noakhaliAmount">10000</span> BDT
               </button>
             </div>
             <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
@@ -62,31 +68,37 @@
               lives of those in need.
             </p>
             <input
-            id="noakhaliInput"
+              id="noakhaliInput"
               class="input-bordered input"
-              type="text"
-              class="grow "
+              type="number"
+              class="grow"
               placeholder="Write Donation Amount"
             />
 
             <div class="card-actions">
-              <button  id="noakhaliBtn" class="w-full btn primary-btn">Donate Now</button>
+              <button
+                id="noakhaliBtn"
+                onclick="submit('noakhaliInput','noakhaliAmount')"
+                class="w-full btn primary-btn"
+              >
+                Donate Now
+              </button>
             </div>
           </div>
         </section>
 
         <!-- card 2 -->
         <section
-          class="flex lg:flex-row flex-col items-center  bg-base-100 shadow-xl p-4 border w-full card "
+          class="flex lg:flex-row flex-col items-center bg-base-100 shadow-xl p-4 border w-full card"
         >
-          <div class="lg:w-6/12 w-full h-full ">
-            <img class="h-full w-full" src="assets/feni.png" alt="Shoes" />
+          <div class="w-full lg:w-6/12 h-full">
+            <img class="w-full h-full" src="assets/feni.png" alt="Shoes" />
           </div>
-          <div class="p-4 lg:w-6/12 card-body gap-3">
+          <div class="gap-3 p-4 lg:w-6/12 card-body">
             <div class="flex gap-2 card-actions">
               <button class="btn">
-                <img  class="h-6"  
-                src="assets/coin.png" alt="" /> 1600 BDT
+                <img class="h-6" src="assets/coin.png" alt="" />
+                <span id="feniAmount">1600</span> BDT
               </button>
             </div>
             <h2 class="card-title">
@@ -103,33 +115,40 @@
               urgent need.
             </p>
             <input
+              id="feniInput"
               class="input-bordered input"
-              type="text"
+              type="number"
               class="grow"
               placeholder="Write Donation Amount"
             />
 
             <div class="card-actions">
-              <button onclick="my_modal_4.showModal()" class="w-full btn primary-btn">Donate Now</button>
+              <button
+                onclick="submit('feniInput','feniAmount')"
+                class="w-full btn primary-btn"
+              >
+                Donate Now
+              </button>
             </div>
           </div>
         </section>
 
         <!-- card 3 -->
         <section
-          class="flex lg:flex-row flex-col items-center bg-base-100 shadow-xl p-4 border w-full card "
+          class="flex lg:flex-row flex-col items-center bg-base-100 shadow-xl p-4 border w-full card"
         >
-          <div class="lg:w-6/12 w-full   ">
+          <div class="w-full lg:w-6/12">
             <img
-              class="h-full object-cover w-full  "
+              class="w-full h-full object-cover"
               src="assets/quota-protest.png"
               alt="Shoes"
             />
           </div>
-          <div class="p-4 lg:w-6/12 card-body gap-3">
+          <div class="gap-3 p-4 lg:w-6/12 card-body">
             <div class="flex gap-2 card-actions">
               <button class="btn">
-                <img class="h-6" src="assets/coin.png" alt="" /> 2400 BDT
+                <img class="h-6" src="assets/coin.png" alt="" />
+                <span id="quotaAmount">2400</span>
               </button>
             </div>
             <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
@@ -145,41 +164,41 @@
               their time of need.
             </p>
             <input
+              id="quotaInput"
               class="input-bordered input"
-              type="text"
+              type="number"
               class="grow"
               placeholder="Write Donation Amount"
             />
 
             <div class="card-actions">
-              <button onclick="my_modal_4.showModal()" class="w-full btn primary-btn">Donate Now</button>
+              <button
+                onclick="submit('quotaInput','quotaAmount')"
+                class="w-full btn primary-btn"
+              >
+                Donate Now
+              </button>
             </div>
           </div>
         </section>
       </div>
       <!-- History -->
 
-      <section id="history" class="hidden w-full">
-        <div
-          tabindex="0"
-          class="bg-base-200 border border-base-300 collapse collapse-open"
-        >
-          <div class="font-medium text-xl collapse-title">
-            I have collapse-open class
-          </div>
-          <div class="font-light collapse-content">
-            <p>tabindex="0" attribute is necessary to make the div focusable</p>
-          </div>
-        </div>
+      <section id="history" class="space-y-3 hidden w-full">
+        <h1 id="noHistory" class="mt-10 text-3xl text-center">
+          ❌ No history Availabe
+        </h1>
       </section>
 
       <!-- Pop Up Dialog -->
       <dialog id="my_modal_4" class="modal">
-        <div class=" flex flex-col justify-center items-center  modal-box w-8/12 lg:w-5/12 max-w-5xl">
-          <h3 class=" font-bold text-3xl">Congrates!</h3>
-          <img  class="py-4" src="assets/coin.png" alt="">
-          <p class="py-4">You Have Donated For HumanKind</p>
-          <h1 class="text-2xl font-bold">Succesfully</h1>
+        <div
+          class="flex flex-col justify-center items-center w-8/12 lg:w-5/12 max-w-5xl modal-box"
+        >
+          <h3 class="font-bold text-3xl">Congrates!</h3>
+          <img class="py-4" src="assets/coin.png" alt="" />
+          <p class="py-4">You Have Donated For Human Kind</p>
+          <h1 class="font-bold text-2xl">Succesfully</h1>
           <div class="modal-action">
             <form method="dialog">
               <!-- if there is a button, it will close the modal -->
