@@ -48,7 +48,7 @@ function submit(input,amount)
     }
     
   else
-     alert("Can't Donate, Check  Input!!!")
+     alert("Can't Donate, Invalid Donation Amount!!!")
 
   
   document.getElementById(input).value = "";
@@ -70,7 +70,7 @@ function history(amount,input)
        conditionText="Donation for Orphan children in Bangladesh "
 
       
-  document.getElementById('history').innerHTML+=
+  document.getElementById('history').innerHTML +=
   `
   <div
           tabindex="0"
