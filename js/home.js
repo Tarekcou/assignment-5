@@ -31,11 +31,11 @@ question.map((q,position)=>{
         tabindex="0"
         class="bg-base-200 border border-base-300 collapse collapse-arrow"
       >
-        <div class="font-medium text-xl collapse-title">
+        <div class="font-medium text-base lg:text-xl collapse-title">
           ${q}
         </div>
         <div class="collapse-content">
-          <p>
+          <p class="font-red-400 text-xs lg:text-base">
             ${answer[position]}
           </p>
         </div>
