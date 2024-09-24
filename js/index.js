@@ -63,14 +63,18 @@ function history(amount,input)
     conditionText="Injured in the quota movement in Bangladesh"
     else if(input==='feniInput')
       conditionText="Flood relief in Feni, Bangladesh"
-      else
+      else if(input==='noakhaliInput')
       conditionText="Flood relief in Noakhali, Bangladesh "
+
+    else
+       conditionText="Donation for Orphan children in Bangladesh "
+
       
   document.getElementById('history').innerHTML+=
   `
   <div
           tabindex="0"
-          class="bg-base-200  border border-base-300 collapse collapse-open p-5"
+          class="bg-base-200  border border-base-300 collapse collapse-open "
         >
           <div
             id="historyTitle"

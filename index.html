@@ -12,7 +12,7 @@
       }
     </style>
   </head>
-  <body class="relative">
+  <body cl`ass="relative">
     <nav class="top-0 z-10 sticky shadow-md backdrop-blur-lg w-full">
       <section
         class="flex justify-around bg-gradient-to-b from-[#f7f6f2] to-[#f3f1ee] py-5 font-bold"
@@ -174,6 +174,56 @@
             <div class="card-actions">
               <button
                 onclick="submit('quotaInput','quotaAmount')"
+                class="w-full btn primary-btn"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- card 3 -->
+        <section
+          class="flex lg:flex-row flex-col items-center bg-base-100 shadow-xl p-4 border w-full card"
+        >
+          <div class="rounded-xl w-full lg:w-6/12 lg:min-h-[430px]">
+            <img
+              class="rounded-xl w-full lg:min-h-[430px] object-cover"
+              src="assets/savethechildren.png"
+              alt="Shoes"
+            />
+          </div>
+          <div class="gap-3 p-4 lg:w-6/12 card-body">
+            <div class="flex gap-2 card-actions">
+              <button class="btn">
+                <img class="h-6" src="assets/coin.png" alt="" />
+                <span id="childrenAmount">3500</span>
+              </button>
+            </div>
+            <h2 class="card-title">
+              Save the Children has been working with children, families,
+              communities and government ministries in Bangladesh since 1970.
+            </h2>
+            <p class="font-light">
+              One of the largest child charities in Bangladesh, with a sizable
+              in-country staff and hundreds of partners, we offer a wide range
+              of programs, including those promoting children’s basic rights to
+              good health, education and a life free from violence. With
+              expertly trained staff, prepositioned supplies and proven
+              programs, we stand ready to respond swiftly and effectively to the
+              country’s frequent emergencies.
+            </p>
+            <input
+              id="childrenInput"
+              class="input-bordered input"
+              type="number"
+              class="grow"
+              placeholder="Write Donation Amount"
+            />
+
+            <div class="card-actions">
+              <button
+                onclick="submit('childrenInput','childrenAmount')"
                 class="w-full btn primary-btn"
               >
                 Donate Now
