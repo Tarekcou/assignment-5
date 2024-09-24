@@ -15,7 +15,10 @@ function getText(id)
 function totalBalance(id)
 {
 
-  document.getElementById('totalBalance').innerText = (getText('totalBalance') >= 0 && getText('totalBalance') >= getValue(id) )?
+  document.getElementById('totalBalance').innerText = 
+  (getText('totalBalance') >= 0  )  ?
      (getText('totalBalance') - getValue(id)) :
-     alert("Cant Donate, Check Your Balance!!!")
+     (alert("Can't Donate, Invalid Donation Amoun!!!")
+    
+    )
 }
