@@ -2469,8 +2469,6 @@ details.collapse summary::-webkit-details-marker {
   border-style: none;
   --tw-bg-opacity: 1;
   background-color: rgb(180 244 97 / var(--tw-bg-opacity));
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .primary-btn:hover {
@@ -2555,30 +2553,6 @@ details.collapse summary::-webkit-details-marker {
   height: 100%;
 }
 
-.max-h-\[450px\] {
-  max-height: 450px;
-}
-
-.min-h-full {
-  min-height: 100%;
-}
-
-.min-h-\[300px\] {
-  min-height: 300px;
-}
-
-.min-h-\[500px\] {
-  min-height: 500px;
-}
-
-.min-h-\[400px\] {
-  min-height: 400px;
-}
-
-.min-h-\[450px\] {
-  min-height: 450px;
-}
-
 .w-10\/12 {
   width: 83.333333%;
 }
@@ -2593,6 +2567,10 @@ details.collapse summary::-webkit-details-marker {
 
 .w-full {
   width: 100%;
+}
+
+.w-9\/12 {
+  width: 75%;
 }
 
 .max-w-5xl {
@@ -2639,6 +2617,10 @@ details.collapse summary::-webkit-details-marker {
   gap: 1rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
@@ -2651,25 +2633,12 @@ details.collapse summary::-webkit-details-marker {
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
-.rounded-md {
-  border-radius: 0.375rem;
-}
-
 .rounded-xl {
   border-radius: 0.75rem;
 }
 
 .border {
   border-width: 1px;
-}
-
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
 .border-base-300 {
@@ -2706,23 +2675,21 @@ details.collapse summary::-webkit-details-marker {
   --tw-gradient-to: #f3f1ee var(--tw-gradient-to-position);
 }
 
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.object-fill {
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-
 .p-4 {
   padding: 1rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .py-4 {
@@ -2815,14 +2782,6 @@ details.collapse summary::-webkit-details-marker {
 }
 
 @media (min-width: 1024px) {
-  .lg\:min-h-\[450px\] {
-    min-height: 450px;
-  }
-
-  .lg\:min-h-\[400px\] {
-    min-height: 400px;
-  }
-
   .lg\:min-h-\[430px\] {
     min-height: 430px;
   }

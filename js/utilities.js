@@ -18,7 +18,7 @@ function totalBalance(id)
   document.getElementById('totalBalance').innerText = 
   (getText('totalBalance') >= 0  )  ?
      (getText('totalBalance') - getValue(id)) :
-     (alert("Can't Donate, Invalid Donation Amoun!!!")
+     (alert("Can't Donate, Invalid Donation Amount!!!")
     
     )
 }

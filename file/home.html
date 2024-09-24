@@ -8,20 +8,40 @@
   </head>
   <body>
     <nav>
-      <section class="flex justify-around bg-[#F9F7F3] py-5 font-bold">
+      <section
+        class="flex justify-around bg-gradient-to-b from-[#f7f6f2] to-[#f3f1ee] py-5 font-bold"
+      >
         <button id="homeBtn" class="primary-btn">Home</button>
-        <div class="flex items-center gap-3">
-          <img class="h-10" src="../assets/logo.png" alt="" />
-          <h1>Donate Bangladesh</h1>
+        <div
+          class="flex flex-wrap justify-center items-center gap-3 text-center"
+        >
+          <img class="h-6 md:h-10" src="../assets/logo.png" alt="" />
+          <h1 class="text-sm md:text-base">Donate Bangladesh</h1>
         </div>
-        <div class="flex items-center gap-3">
+        <div
+          class="flex flex-wrap justify-center items-center gap-1 text-center"
+        >
           <img class="h-6" src="../assets/coin.png" alt="" />
-          <h1>5500BDT</h1>
+          <h1 class="text-sm md:text-base">
+            <span id="totalBalance">5500</span>BDT
+          </h1>
         </div>
       </section>
     </nav>
     <main id="main" class="space-y-6 mx-auto my-10 w-10/12">
       <h1 class="text-4xl">Important FAQ ⁉︎</h1>
+
+      <div
+        tabindex="0"
+        class="bg-base-200 border border-base-300 collapse collapse-arrow"
+      >
+        <div class="font-medium text-xl collapse-title">
+          Focus me to see content
+        </div>
+        <div class="collapse-content">
+          <p>tabindex="0" attribute is necessary to make the div focusable</p>
+        </div>
+      </div>
     </main>
     <script src="../js/home.js"></script>
   </body>
